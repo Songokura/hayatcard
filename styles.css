@@ -99,7 +99,7 @@ h1 { margin-top: 16px; font: 700 clamp(36px, 4.6vw, 64px)/1.04 var(--fd); letter
 .cta { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
 .btn {
   flex: 1 1 240px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  min-height: 62px; padding: 7px 7px 7px 28px; border-radius: 999px;
+  min-height: 62px; padding: 7px 7px 7px 28px; border: 1.5px solid transparent; border-radius: 999px;
   font-size: 16px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
   transition: transform .18s ease, background-color .2s, color .2s;
 }
@@ -115,9 +115,8 @@ h1 { margin-top: 16px; font: 700 clamp(36px, 4.6vw, 64px)/1.04 var(--fd); letter
   .btn-tel:hover { background: rgba(234, 242, 238, .08); }
   .btn:hover i { transform: rotate(-12deg); }
 }
-.wa { margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; color: var(--on-deep-2); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
-.wa svg { color: #25D366; }
-@media (hover: hover) { .wa:hover { color: var(--on-deep); border-color: currentColor; } }
+.btn-wa i { color: #1DA851; }
+.btn-tg i { color: #229ED9; }
 
 .foot { grid-area: foot; position: relative; z-index: 2; padding-top: 18px; font-size: 12px; color: rgba(234, 242, 238, .5); }
 
