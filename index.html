@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap">
 <link rel="preload" as="image" href="assets/doctor.webp?v=20261022-2" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=20261023-1">
+<link rel="stylesheet" href="styles.css?v=20261023-2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,6 +40,24 @@
 }
 </script>
 <script src="https://lead-bot.sultan-askarov-kz.workers.dev/t.js" data-site="hayatclinic" defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18533208301"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18533208301');
+
+  // Конверсии: звонок - «Интерактивные номера телефонов», WhatsApp - «Контакт»
+  window.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    var sendTo = /^tel:/.test(href) ? 'AW-18533208301/VfUDCL_lkKcdEO2hqYVF'
+      : /wa\.me|whatsapp/.test(href) ? 'AW-18533208301/KFDsCPCljacdEO2hqYVF' : '';
+    if (sendTo) gtag('event', 'conversion', { send_to: sendTo, value: 1.0, currency: 'USD', transport_type: 'beacon' });
+  }, true);
+</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
